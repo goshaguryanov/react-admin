@@ -21,6 +21,7 @@ gem "active_model_serializers"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 group :development, :test do
+  gem "webrick"
   gem "pry-rails"
   gem "pry-byebug"
 
@@ -41,6 +42,7 @@ group :development do
   gem "web-console"
   gem "better_errors"
   gem "binding_of_caller"
+  gem "rdbg"
 end
 
 group :test do
@@ -48,3 +50,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "debase"
+# , "~> 0.2.4"
+
+gem "ruby-debug-ide"
+# , "~> 0.7.3"
